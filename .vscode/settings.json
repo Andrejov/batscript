@@ -1,0 +1,24 @@
+{
+    "emeraldwalk.runonsave": {
+        "autoClearConsole": true,
+        "commands": [
+            {
+                "match": "\\.test.js$",
+                "cmd": "node ${file}"
+            },
+            {
+                "match": "\\.js$",
+                "notMatch": "\\.test.js$",
+                "cmd": "if exist \"${fileDirname}\\${fileBasenameNoExt}.test.js\" node ${fileDirname}\\${fileBasenameNoExt}.test.js"
+            },
+            {
+                "match": "\\.bat$",
+                "cmd": "${file}"
+            },
+            {
+                "match": "\\.bats$",
+                "cmd": "node compile/compile.js ${file} cls && \"${fileDirname}\\${fileBasenameNoExt}.bat\""
+            }
+        ]
+    }
+}
