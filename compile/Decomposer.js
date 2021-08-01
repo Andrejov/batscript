@@ -96,6 +96,19 @@ class Decomposer
         })
     }
 
+    static escapeSpecialCharacters(string)
+    {
+        const specialChars = "&<>|".split('');
+        
+        string = string.split('^').join('^^');
+
+        specialChars.forEach(ch => {
+            string = string.split(ch).join(`^${ch}`);
+        })
+
+        return string;
+    }
+
     static nodesFromString(string, scope)
     {
         if(!scope)
@@ -361,7 +374,7 @@ class Decomposer
             const ca = clean.split('');
             if(ca[0] == ca[ca.length - 1] && ['"', "'"].includes(ca[0]))
             {
-                node.value = clean.substring(1, clean.length - 1);
+                node.value = this.escapeSpecialCharacters(clean.substring(1, clean.length - 1));
             }else{
                 scope.throw(`Could not parse raw value from '${clean}'`);
             }

@@ -338,7 +338,7 @@ class Composer
      */
     static builddeclare(node, scope)
     {
-        scope.pushLine(`SET ${node.batch}=${this.build(node.value, scope)}`)
+        scope.pushLine(`SET "${node.batch}=${this.build(node.value, scope)}"`)
     }
 
     /**
@@ -359,13 +359,13 @@ class Composer
             const name = node.assignDest[idx];
             const sbl = scope.getSymbolDeep(name, node);
 
-            scope.pushLine(`SET ${sbl.node.batch}=${this.build(param, scope)}`);
+            scope.pushLine(`SET "${sbl.node.batch}=${this.build(param, scope)}"`);
         })
 
         node.assignContents.forEach(line => {
             if(line.type == 'return')
             {
-                scope.pushLine(`SET ${retstr}=${this.build(line.value, scope)}`)
+                scope.pushLine(`SET "${retstr}=${this.build(line.value, scope)}"`)
                 scope.pushLine(`GOTO ${gotostr}`);
             }else{
                 this.build(line, scope);
@@ -391,7 +391,7 @@ class Composer
             const exprstr = `__expr_${this.random()}`;
             const endstr = `__ifend_${this.random()}`;
 
-            scope.pushLine(`SET ${exprstr}=${this.build(node.expression, scope)}`);
+            scope.pushLine(`SET "${exprstr}=${this.build(node.expression, scope)}"`);
 
             scope.pushLine(`IF \"%${exprstr}%\"==\"1\" (`)
             scope.pushLine(`REM IF_FILLER_STATEMENT`)
@@ -409,7 +409,7 @@ class Composer
 
             scope.pushLine(`:${startstr}`);
 
-            scope.pushLine(`SET ${exprstr}=${this.build(node.expression, scope)}`);
+            scope.pushLine(`SET "${exprstr}=${this.build(node.expression, scope)}"`);
 
             scope.pushLine(`IF \"%${exprstr}%\"==\"1\" (`)
             scope.pushLine(`REM WHILE_FILLER_STATEMENT`)
