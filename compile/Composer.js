@@ -378,7 +378,65 @@ class Composer
 
         return `%${retstr}%`;
     }
+    
+    /**
+     * 
+     * @param {Node} node 
+     * @param {ComposingScope} scope 
+     */
+    static buildsub(node, scope)
+    {
+        if(node.sub == "if")
+        {
+            const exprstr = `__expr_${this.random()}`;
+            const endstr = `__ifend_${this.random()}`;
 
+            scope.pushLine(`SET ${exprstr}=${this.build(node.expression, scope)}`);
+
+            scope.pushLine(`IF \"%${exprstr}%\"==\"1\" (`)
+            scope.pushLine(`REM IF_FILLER_STATEMENT`)
+            scope.pushLine(`) ELSE (`);
+            scope.pushLine(`GOTO ${endstr}`);
+            scope.pushLine(`)`);
+
+            this.build(node.block, scope);
+
+            scope.pushLine(`:${endstr}`);
+        }else if(node.sub == "while"){
+            const exprstr = `__expr_${this.random()}`;
+            const startstr = `__whilestart_${this.random()}`;
+            const endstr = `__whileend_${this.random()}`;
+
+            scope.pushLine(`:${startstr}`);
+
+            scope.pushLine(`SET ${exprstr}=${this.build(node.expression, scope)}`);
+
+            scope.pushLine(`IF \"%${exprstr}%\"==\"1\" (`)
+            scope.pushLine(`REM WHILE_FILLER_STATEMENT`)
+            scope.pushLine(`) ELSE (`);
+            scope.pushLine(`GOTO ${endstr}`);
+            scope.pushLine(`)`);
+
+            this.build(node.block, scope);
+
+            scope.pushLine(`GOTO ${startstr}`);
+            scope.pushLine(`:${endstr}`)
+        }else{
+            throw `Unsupported sub ${node.sub}`;
+        }
+    }
+
+    /**
+     * 
+     * @param {Node} node 
+     * @param {ComposingScope} scope 
+     */
+    static buildblock(node, scope)
+    {
+        node.contents.forEach(line => {
+            this.build(line, scope);
+        });
+    }
 }
 
 module.exports = Composer

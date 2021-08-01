@@ -478,7 +478,7 @@ class Decomposer
     static joinFromString(string, scope)
     {
         const singleOperators = "+-*/&|=".split('');
-        const doubleOperators = ['==', '>=', '<=', '&&', '||'];
+        const doubleOperators = ['==', '!=', '>=', '<=', '&&', '||'];
 
         const that = this;
 
