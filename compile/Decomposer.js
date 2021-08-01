@@ -99,8 +99,10 @@ class Decomposer
     static escapeSpecialCharacters(string)
     {
         const specialChars = "&<>|".split('');
-        
+
         string = string.split('^').join('^^');
+
+        string = string.split('%').join('%');
 
         specialChars.forEach(ch => {
             string = string.split(ch).join(`^${ch}`);

@@ -13,11 +13,13 @@
             },
             {
                 "match": "\\.bat$",
+                "cmd3": "echo turned off",
                 "cmd": "${file}"
             },
             {
                 "match": "\\.bats$",
-                "cmd": "node compile/compile.js ${file} cls && \"${fileDirname}\\${fileBasenameNoExt}.bat\""
+                "cmd": "node compile/compile.js ${file}",
+                "cmd3": "node compile/compile.js ${file} && \"${fileDirname}\\${fileBasenameNoExt}.bat\""
             }
         ]
     }

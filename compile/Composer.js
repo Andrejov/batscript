@@ -120,8 +120,6 @@ class Composer
             }
         })
 
-        scope.pushLine("@ECHO OFF")
-
         this.build(tree, scope);
 
 
@@ -136,6 +134,14 @@ class Composer
         // nodes.forEach(n => this.destruct(n, scope));
 
         // this.pick(main, scope);
+
+        scope.pushInit("::::::::::::::::::::::::::");
+        scope.pushInit("::  BATSCRIPT COMPILER  ::");
+        scope.pushInit(":: written by _Andrejov ::");
+        scope.pushInit(`::  ${new Date().toISOString().substr(0,10).padEnd(18,' ')}  ::`)
+        scope.pushInit(`::  ${new Date().toISOString().substr(11,8).padEnd(18,' ')}  ::`)
+        scope.pushInit("::::::::::::::::::::::::::");
+        scope.pushInit("@ECHO OFF");
 
         return [
             ...scope.initializers,

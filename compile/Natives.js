@@ -38,6 +38,10 @@ class Natives
     static generateNativeFunctions()
     {
         return [
+            // R A W
+            this.native("raw", "%${0}%", ["raw"], true),
+            this.native("env", "CALL SET ${r}=%%%${0}%%%", ['var'], true),
+
             // I/O
             this.native("echo", "ECHO %${0}%", ["val"], true),
             this.native("println", [
@@ -55,6 +59,15 @@ class Natives
                 "SET /P ${r}="
             ], [], true),
             this.native("pause", "PAUSE>NUL", [], true),
+            this.native("settitle", "TITLE %${0}%", ["val"], true),
+            this.native("setcolor", "COLOR %${0}%", ["clr"], true),
+
+            // Basic commands
+            this.native("start", "START %${0}%", ['args'], true),
+            
+            // File&dirs
+            this.native("cd", "CD %${0}%", ['dir'], true),
+            this.native("mkdir", "MD %${0}%", ['dir'], true),
 
             // Number operators
             this.native("add", "SET /A ${r}=${0}+${1}", ["a", "b"]),
