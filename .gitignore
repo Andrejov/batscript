@@ -1,8 +1,14 @@
-_old
-.vscode/*
-!.vscode/settings.json
+# Bat(s) files
 *.bat
 *.bats
+!example.bats
+
+# IDE
+.vscode/*
+!.vscode/settings.json
+
+# Tests
+_old
 tests
 *.test.js
 compile/trash
