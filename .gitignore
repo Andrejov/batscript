@@ -1,3 +1,7 @@
 _old
 .vscode/*
 !.vscode/settings.json
+*.bat
+*.bats
+tests
+*.test.js
