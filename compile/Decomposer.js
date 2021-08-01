@@ -151,6 +151,8 @@ class Decomposer
             scope = new DecomposerScope(string);
         }
 
+        string = string.trim()
+
         scope.update(string);
         this.verifyBrackets(string, scope);
 
@@ -175,23 +177,14 @@ class Decomposer
             }
         }
 
-        if(
-            (string.startsWith('"') && string.endsWith('"')) ||
-            (string.startsWith("'") && string.endsWith("'"))
-        ){
-            return this.rawFromString(string, scope);
-        }else if(!isNaN(+string))
-        {
-            return this.rawFromString(string, scope);
-        }
-
         if(['void','function','abstract'].some(i => string.startsWith(i+" ")))
         {
             return this.funcsFromString(string, scope);
         }else 
         if(string.startsWith('var '))
         {
-            return this.declareFromString(string, scope);
+            // return this.declareFromString(string, scope);
+            return this.funcsFromString(string, scope);
         }else if(string.startsWith('return '))
         {
             return this.returnFromString(string, scope);
@@ -214,6 +207,16 @@ class Decomposer
             }
 
             // Later if no operator structure
+            if(
+                (string.startsWith('"') && string.endsWith('"')) ||
+                (string.startsWith("'") && string.endsWith("'"))
+            ){
+                return this.rawFromString(string, scope);
+            }else if(!isNaN(+string))
+            {
+                return this.rawFromString(string, scope);
+            }
+
             const s = new rstream(string);
             const fbr = s.readTill('(');
 
@@ -244,6 +247,23 @@ class Decomposer
         if(!string.trim().length)
         {
             return [];
+        }
+
+        if(string.startsWith("var "))
+        {
+            const vardef = s.read('',[';','\r','\n']);
+
+            if(vardef.splitMinClean.length == 1)
+            {
+                return this.declareFromString(string, scope);
+            }else{
+                const varstr = vardef.splitMinClean[0];
+
+                return [
+                    this.declareFromString(varstr, scope),
+                    ...this.funcsFromString(string.substr(vardef.splitMin[0].length + 1).trim(), scope)
+                ]
+            }
         }
 
         const fdef = s.read('(', ' ');

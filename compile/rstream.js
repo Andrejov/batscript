@@ -26,7 +26,7 @@ class rstream
 
     trace(text)
     {
-        //console.log(text);
+        // console.log(text);
     }
 
     setString(string)
@@ -171,6 +171,12 @@ class rstream
                     {
                         this.trace(`  Decremented stack to lvl ${this.stack.length}`);
                         this.stack.shift();
+                    }else{
+                        if(openFind)
+                        {
+                            this.stack.unshift(openFind);
+                            this.trace(`  Incremented stack to lvl ${this.stack.length}`);
+                        }
                     }
 
                     if(!reverse)

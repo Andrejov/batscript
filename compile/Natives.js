@@ -61,6 +61,11 @@ class Natives
             this.native("pause", "PAUSE>NUL", [], true),
             this.native("settitle", "TITLE %${0}%", ["val"], true),
             this.native("setcolor", "COLOR %${0}%", ["clr"], true),
+            this.native("cls", "CLS", [], true),
+            this.native("psleep", [
+                'SET /A ${0}=${0}+1',
+                "PING -n %${0}% 0.0.0.0>NUL"
+            ], ['time'], true),
 
             // Basic commands
             this.native("start", "START %${0}%", ['args'], true),
@@ -68,6 +73,12 @@ class Natives
             // File&dirs
             this.native("cd", "CD %${0}%", ['dir'], true),
             this.native("mkdir", "MD %${0}%", ['dir'], true),
+            this.native("fileexists", [
+                'SET ${r}=0',
+                'IF EXIST "%${0}%" (',
+                    'SET ${r}=1',
+                ')'
+            ], ['file'], true),
 
             // Number operators
             this.native("add", "SET /A ${r}=${0}+${1}", ["a", "b"]),
@@ -77,6 +88,44 @@ class Natives
 
             // String operators
             this.native("join", "SET ${r}=%${0}%%${1}%", ["str1", "str2"]),
+            this.native("substr", [
+                'SET "${r}=${0}:~%${1}%,%${2}%"',
+                'CALL SET "${r}=%%%${r}%%%"'
+            ], ["input", "from", "len"], true),
+            this.native("repeatstr", [
+                'SET "${r}="',
+                'SET "${x}=0"',
+                ':${t}',
+                'SET /A ${x}=${x}+1',
+                'SET "${r}=%${r}%%${0}%"',
+                'IF "%${x}%"=="%${1}%" GOTO ${y}',
+                'GOTO ${t}',
+                ':${y}'
+            ], ['text', 'count'], true),
+            this.native("padend", [
+                'SET "${r}=%${0}%"',
+                'SET "${x}=0"',
+                ':${t}',
+                'SET /A ${x}=${x}+1',
+                'SET "${r}=%${r}%%${1}%"',
+                'IF "%${x}%"=="%${2}%" GOTO ${y}',
+                'GOTO ${t}',
+                ':${y}',
+                'SET "${z}=${r}:~0,%${2}%"',
+                'CALL SET "${r}=%%%${z}%%%"'
+            ], ['text', 'pad', 'count'], true),
+            this.native("padstart", [
+                'SET "${r}=%${0}%"',
+                'SET "${x}=0"',
+                ':${t}',
+                'SET /A ${x}=${x}+1',
+                'SET "${r}=%${1}%%${r}%"',
+                'IF "%${x}%"=="%${2}%" GOTO ${y}',
+                'GOTO ${t}',
+                ':${y}',
+                'SET "${z}=${r}:~-%${2}%"',
+                'CALL SET "${r}=%%%${z}%%%"'
+            ], ['text', 'pad', 'count'], true),
 
             this.native("compare", [
                 'SET ${r}=0',

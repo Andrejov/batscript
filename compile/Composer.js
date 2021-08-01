@@ -9,6 +9,9 @@ class Composer
 {
     static debug = false;
     static obfuscate = true;
+    
+    // static debug = true;
+    // static obfuscate = false;
 
     static randomInc = -1;
     static random()
@@ -49,23 +52,42 @@ class Composer
 
         const natives = Natives.generateNativeFunctions();
 
-        nodes = [...nodes, ...natives];
+        const vnodes = nodes.filter(n => n.type == 'declare');
 
-        const main = nodes.find(n => n.type == 'func' && n.func == 'main');
+        const fnodes = [...nodes.filter(n => n.type == 'func'), ...natives];
+
+        const main = fnodes.find(n => n.type == 'func' && n.func == 'main');
 
         if(!main)
         {
             throw `Could not find main statement`;
         }
 
-        const globals = nodes.filter(n => n.func != 'main');
+        // const globals = fnodes.filter(n => n.func != 'main');
 
         // Init global symbols
 
-        nodes.forEach(func => {
+        fnodes.forEach(func => {
             func.batch = this.random() + func.func;
 
             scope.initSymbol(func.func, func, null);
+        })
+
+        const vvarr = {};
+        vnodes.forEach(node => {
+            const vn = new Node('var');
+            vn.var = this.generateLabel(`_glob_${node.var}_`);
+
+            scope.initSymbol(vn.var, vn, null);
+
+            const rdecl = new Node('declare');
+            rdecl.var = vn.var;
+            rdecl.value = node.value;
+            rdecl.loose = true;
+
+            main.block.contents.unshift(rdecl);
+
+            vvarr[node.var] = vn.var;
         })
 
         // Destruct main eval
@@ -75,6 +97,26 @@ class Composer
         startpoint.method = true;
 
         let tree = this.assign(startpoint, scope, null);
+
+
+        const replaceVVar = (n) => {
+            if(n.type == 'eval')
+            {
+                if(vvarr[n.eval])
+                {
+                    n.eval = vvarr[n.eval];
+                }
+            }else if(n.type == 'declare')
+            {
+                if(vvarr[n.var])
+                {
+                    n.var = vvarr[n.var];
+                }
+            }
+        }
+        Util.forNode(tree, n => {
+            replaceVVar(n);
+        })
 
         let found = true;
         let callStack = 0;
@@ -88,6 +130,8 @@ class Composer
             const assignCandidates = [];
 
             Util.forNode(tree, (n, parent) => {
+                replaceVVar(n);
+
                 if(n.type == 'eval')
                 {
                     found = true;
@@ -110,6 +154,17 @@ class Composer
                 throw `Maximum compilation stack exceeded: note that recursion is not supported`
             }
         }
+
+        let nodeCount = 0;
+        Util.forNode(tree, n => {
+            if(n.var == "time")
+            {
+                console.log("X")
+            }
+            replaceVVar(n);
+
+            nodeCount += 1;
+        })
 
         if(this.obfuscate)
         {
@@ -202,12 +257,12 @@ class Composer
                 const loc = Math.floor(Math.random() * (scope.output.length - obfEnd)) + obfEnd;
 
                 let line = "";
-                if(Math.random() > 0.2)
-                {
+                // if(Math.random() > 0.2)
+                // {
                     line = `SET "${s1}=%${s2}%"`
-                }else{
-                    line = `:${s1}`
-                }
+                // }else{
+                //     line = `:${s1}`
+                // }
 
                 scope.output.splice(loc, 0, line);
             }
@@ -232,6 +287,8 @@ class Composer
         scope.pushInit(`::  ${new Date().toISOString().substr(11,8).padEnd(18,' ')}  ::`)
         scope.pushInit("::::::::::::::::::::::::::");
         scope.pushInit("@ECHO OFF");
+
+        console.log(`Tree nodes count: ${nodeCount}`)
 
         return [
             ...scope.initializers,
@@ -310,6 +367,8 @@ class Composer
                 }
             }
 
+            const cvars = {};
+
             Util.forNode(func, n => {
                 if(n.type == 'eval')
                 {
@@ -320,6 +379,20 @@ class Composer
                 }else if(n.type == 'native')
                 {
                     n.nativeParams = n.nativeParams.map(p => replaceInp(p));
+                }else if(n.type == 'declare' && !n.loose)
+                {
+                    cvars[n.var] = this.generateLabel(`_${fmod}_${n.var}_`);
+                    n.var = cvars[n.var];
+                }
+            })
+
+            Util.forNode(func, n => {
+                if(n.type == 'eval')
+                {
+                    if(cvars[n.eval])
+                    {
+                        n.eval = cvars[n.eval];
+                    }
                 }
             })
 
@@ -392,6 +465,11 @@ class Composer
         //this.native("add", "SET /A ${r}=${a}+${b}", ["a", "b"])
         const retvar = this.generateLabel(`__ret_ntv_`);
 
+        const tvars = {};
+        'txyz'.split('').forEach(t => {
+            tvars[t] = this.generateLabel(`_nt_tvar_g_`)
+        })
+
         node.nativeString.forEach(line => {
             const rpbox = '___$$^_/'
             const rpbase = line.split('${').join(rpbox);
@@ -399,6 +477,14 @@ class Composer
             let replaced = rpbase.split(`${rpbox}r}`).join(retvar);
             node.nativeParams.forEach((v,i) => {
                 replaced = replaced.split(`${rpbox}${i}}`).join(`${v}`)
+            })
+
+            Object.keys(tvars).forEach(t => {
+                replaced = replaced.split(`${rpbox}${t}}`).join(tvars[t]);
+            })
+
+            'lu'.split('').forEach(t => {
+                replaced = replaced.split(`${rpbox}${t}}`).join(this.generateLabel('_nt_tvar_l_'));
             })
 
             scope.pushLine(replaced);
@@ -435,6 +521,7 @@ class Composer
     static builddeclare(node, scope)
     {
         scope.pushLine(`SET "${node.batch}=${this.build(node.value, scope)}"`)
+        return 0;
     }
 
     /**
@@ -526,6 +613,7 @@ class Composer
         }else{
             throw `Unsupported sub ${node.sub}`;
         }
+        return 0;
     }
 
     /**
@@ -538,6 +626,7 @@ class Composer
         node.contents.forEach(line => {
             this.build(line, scope);
         });
+        return 0;
     }
 }
 

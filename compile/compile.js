@@ -1,12 +1,34 @@
 const Composer = require('./Composer');
 const Decomposer = require('./Decomposer');
 const fs = require('fs');
+const Util = require('./Util');
 
 exports.compile = function(sourceCode)
 {
+    console.log('Compile started');
+    let time1 = new Date().getTime();
+    
     const nodes = Decomposer.nodeFromString(sourceCode.trim())
 
+    let count = 0;
+
+    nodes.forEach(node => {
+        Util.forNode(node, n => {
+            count +=1;
+        })
+    })
+
+    let time2 = new Date().getTime();
+    console.log(`Composing...`)
+
     const batch = Composer.compose(nodes);
+
+    let time3 = new Date().getTime();
+    console.log(`Decompose nodes count: ${count}`);
+    console.log(`Batch lines count: ${batch.split('\r\n').length}`)
+    console.log(`Decompose finished in ${time2 - time1}ms`)
+    console.log(`Compose finished in ${time3 - time2}ms`)
+    console.log(`Compile ended successfully in ${time3 - time1}ms`);
 
     return batch;
 }
