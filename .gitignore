@@ -1,7 +1,9 @@
 # Bat(s) files
 *.bat
 *.bats
-!example.bats
+
+# Examples
+!examples/*
 
 # IDE
 .vscode/*

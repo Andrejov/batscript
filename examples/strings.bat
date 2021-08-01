@@ -1,0 +1,336 @@
+::::::::::::::::::::::::::
+::  BATSCRIPT COMPILER  ::
+:: written by _Andrejov ::
+::  2021-08-01          ::
+::  20:03:48            ::
+::::::::::::::::::::::::::
+@ECHO OFF
+SET "xLftSJANUyXqokDtSeFXPlqcwOKNgzjZ=C"
+SET "TPUmDksyIWVTJThlQFPwLQBORLZbbtFS=H"
+SET "sXaIqdenWiUfyLnhSTCqZUYtpyVJkYYn=8"
+SET "eBdTlspdhDxsFgCRiOVfEmmJuLrxtUuC=g"
+SET "jYrEqHGypfuMFeTHsyeqxKtyLxdgBywx=t"
+SET "KBiNPWquagGrmsixeEszhkvuztmjodvp=Y"
+SET "fYMCIkqsHAqShhWrODYgWkcNprWIQpkL=m"
+SET "NkePhpXcatIMepRmnykorlSzouMdoQiM=N"
+SET "GScDQEjmFwTpQClBgUiRjyabeeHhAKih=i"
+SET "FtxpRPdHqGGUOYfuAymXidxFVLYqshHv=u"
+SET "RHOgMhbpnbTZlthmCsaCjuszLOYUDnzX=l"
+SET "OujWTkGsyHHsazEhvFpHAyArGQEqLkUd= "
+SET "wjlkYDLiYGJnACeZpVlaeOillrnLAPVK=M"
+SET "fARwMkasGUxlMyUFrtNtZDfUYTXNrlvZ=W"
+SET "MznrScTDdULfFkJHvuzgqGRSlWKZKBIn=K"
+SET "dIJspOaOxynoZDNqiJIEkYgYmrcTXJqB=0"
+SET "sBghyrLhOdaaBVJWlRSmQbUsxljvKlyA=o"
+SET "GZEijCGJkGpkGoTSaDcGBMYCBquGkhQG=z"
+SET "RxNuGnbgzcjxlaqumjvgRGEbhWWebDXV=R"
+SET "jvWrvHdvLlcUGqorMdUFqVyBrufOtupx=y"
+SET "fCDJPjdeUIrJuORWArnKSMbjpbzfSLgx=:"
+SET "APRvDZvVMMTvTtLMjxqPGngxtPkyNamD=O"
+SET "FFNMAeYTVJeaumaJjPvtOJfmWRQEDvgg=e"
+SET "HPbDUhWLaTPeabjRjaHzFgZfwLpztPnI=L"
+SET "MrfghrGiVpMJFRxUkPivPlBHHKXojMUk=I"
+SET "YKJvxfPhPDBnqePHTRzowzDjnunrnfRY=j"
+SET "hMfmZSaeiojxUxZgyHsrhGwttQxavLzb=d"
+SET "idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE=="
+SET "SQigZqTvnEfQfvRhhGXlxCDABfVgKszZ=!"
+SET "aIFKNqteBOxqxUBXxvipToTIcgycCpXe=p"
+SET "uwcYYFZepYrkjWJevIDczLrGcKIASmWX=B"
+SET "YYZnlKdwlVTxgvNgvQvfaDVHZgiwbpwK=,"
+SET "VGlkovWhvDegAeyQgAEEktRYDKDcGXCf=~"
+SET "fRgAzAScDuBMtHyJoChpMMwCelVVfWdm=n"
+SET "MlbSSpMeemlWHRNUowhQOxjdSpkjXbwL=s"
+SET "EeaCOLLTcCWqabwJCsKiMMRuPezeCwHU=U"
+SET "uyZtsNQxHVcNBoHGREcZXyOmrlEPSROS=h"
+SET "CFWgjGJGzGmOTVsVOoBoXprGlhYYIqty=T"
+SET hlBxzGYDULvQFFCvVZhVpoZJHRxXShyo=
+SET "QdsUCNzzgnvBAEIhmFmrHsrgzdcibuGM="
+SET "WvGzDlLJypnJvJuckZjRHOOLIGNDpydq="
+SET "PqUbfRGHoVJnwkodshwzTqUtmmQXJVcp=%oYxyHxfHwouepcgchWwzkkoEJIHuszfSval%"
+SET "iJHEvULnqDoiGfJeRrjJBITCINAdtFIE=%cLuDWCGLNUOuVBzxWPjCgRSMaOWqbqtk%"
+SET MmsCwUHhIciurNsYQTKmRRUrJfZxhvty=
+SET "FUZtjLjvqrdreNMgohkLKGGJcRhmmMLh=%ygEMqfIqIcPlGluqCYRveslXNgNWAkzM%"
+SET "MNUfoimwsxQiZNsWOzAgWLjMiCTksLLF=%WAYumThRetFclYzaBtvpWGfrPLpfTMrH%"
+SET "MRijzlZBKGCWrlvHCTUSQhPpxogtgfWanewTitle=%TPUmDksyIWVTJThlQFPwLQBORLZbbtFS%%FFNMAeYTVJeaumaJjPvtOJfmWRQEDvgg%%RHOgMhbpnbTZlthmCsaCjuszLOYUDnzX%%RHOgMhbpnbTZlthmCsaCjuszLOYUDnzX%%sBghyrLhOdaaBVJWlRSmQbUsxljvKlyA%%SQigZqTvnEfQfvRhhGXlxCDABfVgKszZ%"
+SET "MwlmheDmkdWqPfCdqdOSfVZifAhayqdt=%CNtEUEYWRuUbafUoqkprCXGShHHCvRGA%"
+SET "WvGzDlLJypnJvJuckZjRHOOLIGNDpydq=%MRijzlZBKGCWrlvHCTUSQhPpxogtgfWanewTitle%"
+SET NiCVungIVqGrNAUxuqjnqhSHUiCeMyph=
+SET "uwiWgJnKtJJJymMoSdPIcyPcDPIzbyrgtext=%WvGzDlLJypnJvJuckZjRHOOLIGNDpydq%"
+SET "yOnBxFobYrPajYappUXcpgmuZnUaVAho=%hYPlgKZrTrpddKmDDySYcTvzcsPUOthn%"
+SET "uwiWgJnKtJJJymMoSdPIcyPcDPIzbyrgpad= "
+SET "uwiWgJnKtJJJymMoSdPIcyPcDPIzbyrgcount=18"
+SET "kfnYDZCSQktjtRGuAFxngJVNpXPwswcu=%uwiWgJnKtJJJymMoSdPIcyPcDPIzbyrgtext%"
+SET "kdSKNBuxvsnGLqqyTUWafQKbBVFgCSNw=0"
+:GCyClsqeMMHUqrehcrRLfyvkVFNKlnOH
+SET /A kdSKNBuxvsnGLqqyTUWafQKbBVFgCSNw=kdSKNBuxvsnGLqqyTUWafQKbBVFgCSNw+1
+SET "ioYLHDowAmidyXpLcqRzSAzxlrPaJohj=%cLuDWCGLNUOuVBzxWPjCgRSMaOWqbqtk%"
+SET "cuvXvpMeVyQEwiKbftfFwpHCDvytmTNL=%eharqMUBZPbDZOYElTOgOCfQjFOqMttX%"
+SET "kfnYDZCSQktjtRGuAFxngJVNpXPwswcu=%kfnYDZCSQktjtRGuAFxngJVNpXPwswcu%%uwiWgJnKtJJJymMoSdPIcyPcDPIzbyrgpad%"
+SET "VfMfnWCKOVVcwrQPIImVIpQbJKnkHUFu=%OSXHtdtBwKxuAHpPrtgkcfBRamrMeZkgstr1%"
+IF "%kdSKNBuxvsnGLqqyTUWafQKbBVFgCSNw%"=="%uwiWgJnKtJJJymMoSdPIcyPcDPIzbyrgcount%" GOTO qUooxaLidKOszvFGRojajxBJoYrdNkLl
+GOTO GCyClsqeMMHUqrehcrRLfyvkVFNKlnOH
+:qUooxaLidKOszvFGRojajxBJoYrdNkLl
+SET "VxdXIAWkLYMcAjsQiPARKoajboTEarAd=kfnYDZCSQktjtRGuAFxngJVNpXPwswcu:~0,%uwiWgJnKtJJJymMoSdPIcyPcDPIzbyrgcount%"
+CALL SET "kfnYDZCSQktjtRGuAFxngJVNpXPwswcu=%%%VxdXIAWkLYMcAjsQiPARKoajboTEarAd%%%"
+SET "NiCVungIVqGrNAUxuqjnqhSHUiCeMyph=%kfnYDZCSQktjtRGuAFxngJVNpXPwswcu%"
+GOTO ZfQLNtAcdMzeThVQjJGWDxgLescsIvDG
+SET "ekSPziwqadeLwzYqkQkuNczctOJayhYH=%ECadnQczzBRLJzppFLKhQxXtaKiwyBmh%"
+SET "yOnBxFobYrPajYappUXcpgmuZnUaVAho=%kwBmyPoNRrXnCMDUkSJKSEYqWjMbAzKm%"
+SET "NiCVungIVqGrNAUxuqjnqhSHUiCeMyph=0"
+GOTO ZfQLNtAcdMzeThVQjJGWDxgLescsIvDG
+SET "PqUbfRGHoVJnwkodshwzTqUtmmQXJVcp=%OSXHtdtBwKxuAHpPrtgkcfBRamrMeZkgstr1%"
+:ZfQLNtAcdMzeThVQjJGWDxgLescsIvDG
+SET "iJHEvULnqDoiGfJeRrjJBITCINAdtFIE=%VfMfnWCKOVVcwrQPIImVIpQbJKnkHUFu%"
+SET "QdsUCNzzgnvBAEIhmFmrHsrgzdcibuGM=%NiCVungIVqGrNAUxuqjnqhSHUiCeMyph%"
+SET QqceijsfencRsaNcgflxMxzZUYuetimK=
+SET "ioYLHDowAmidyXpLcqRzSAzxlrPaJohj=%grvxdMzcRrELWSBZqBxFheTCdkgzMTLE%"
+SET "iuxUiTetKLaucmUhNNQFNzJuwzpryPaXval=%MRijzlZBKGCWrlvHCTUSQhPpxogtgfWanewTitle%"
+SET "MNUfoimwsxQiZNsWOzAgWLjMiCTksLLF=%grvxdMzcRrELWSBZqBxFheTCdkgzMTLE%"
+SET "cuvXvpMeVyQEwiKbftfFwpHCDvytmTNL=%ZazJZxPBKGawAZdZlnJiZXvxcgCpJWsCcount%"
+SET "ekSPziwqadeLwzYqkQkuNczctOJayhYH=%ONpnNPsqjPQBrloLvecXSMcbCcLhydBR%"
+SET "mCTXmZcSzDZgwDifqCSqUSriWRbMGMea=%yOnBxFobYrPajYappUXcpgmuZnUaVAho%"
+TITLE %iuxUiTetKLaucmUhNNQFNzJuwzpryPaXval%
+SET "QqceijsfencRsaNcgflxMxzZUYuetimK=%SQwSMWiveRQeLSYzflLBjBuhUfjAIYis%"
+SET "gPLcnHtWQgvcQeamDBjjHpLiYpIcEuqk=%ZazJZxPBKGawAZdZlnJiZXvxcgCpJWsCpad%"
+GOTO KrrUJreaYGvTlzMYFlnFWQeHhsTTVogJ
+SET "QqceijsfencRsaNcgflxMxzZUYuetimK=0"
+GOTO KrrUJreaYGvTlzMYFlnFWQeHhsTTVogJ
+SET "btxsrenboCDREVsrrcrqRPmqvEYFzapI=%muAQsAbqwrLprnFxBmhmklFpTCXvuQyE%"
+:KrrUJreaYGvTlzMYFlnFWQeHhsTTVogJ
+SET "DmUrppMHFXkvBkOWlFRiHAeuQmqaFaqF=%FUZtjLjvqrdreNMgohkLKGGJcRhmmMLh%"
+SET "MmsCwUHhIciurNsYQTKmRRUrJfZxhvty=0"
+SET "ioYLHDowAmidyXpLcqRzSAzxlrPaJohj=%TXYhqMUItozhQAZMziDAsHHqnpXvxMNr%"
+GOTO wqVymjaHcklMmCxQplVCgMAjcDVaWzWJ
+SET "ioYLHDowAmidyXpLcqRzSAzxlrPaJohj=%MNUfoimwsxQiZNsWOzAgWLjMiCTksLLF%"
+:wqVymjaHcklMmCxQplVCgMAjcDVaWzWJ
+:qQvEjEtDnaXmUtHQHhlBawPRjIDjsMxG
+SET "fbfsjITfobnAkuxAiQnNyfTxFSfyQWoZ=1"
+SET "cuvXvpMeVyQEwiKbftfFwpHCDvytmTNL=%MwlmheDmkdWqPfCdqdOSfVZifAhayqdt%"
+IF "%fbfsjITfobnAkuxAiQnNyfTxFSfyQWoZ%"=="1" (
+REM QmZLnUjHRhvGTrxTfgAgDnWYArzqEZSx
+SET "ygEMqfIqIcPlGluqCYRveslXNgNWAkzM=%mCTXmZcSzDZgwDifqCSqUSriWRbMGMea%"
+) ELSE (
+GOTO sZDIqDnVtRBwtGLdrAFNpznBKWdknRoN
+)
+SET uevprdnYUJNtdSfXKPwKFeXSqpInuTFu=
+SET caAPnNGNiobUXdpORbwmeMLdJVoZzmmF=
+SET "VmFDSJGvduUqhwVkYGIUiXxGoimYyUxdvar=%jYrEqHGypfuMFeTHsyeqxKtyLxdgBywx%%GScDQEjmFwTpQClBgUiRjyabeeHhAKih%%fYMCIkqsHAqShhWrODYgWkcNprWIQpkL%%FFNMAeYTVJeaumaJjPvtOJfmWRQEDvgg%%fCDJPjdeUIrJuORWArnKSMbjpbzfSLgx%%VGlkovWhvDegAeyQgAEEktRYDKDcGXCf%%dIJspOaOxynoZDNqiJIEkYgYmrcTXJqB%%YYZnlKdwlVTxgvNgvQvfaDVHZgiwbpwK%%sXaIqdenWiUfyLnhSTCqZUYtpyVJkYYn%"
+CALL SET sULMfKyuuDeBkGxfrzLbjDzdnONIoHKj=%%%VmFDSJGvduUqhwVkYGIUiXxGoimYyUxdvar%%%
+SET "caAPnNGNiobUXdpORbwmeMLdJVoZzmmF=%sULMfKyuuDeBkGxfrzLbjDzdnONIoHKj%"
+SET "WAYumThRetFclYzaBtvpWGfrPLpfTMrH=%vgerxWgOArmRbfIsDCQsiuAvsQWPkwNgstr1%"
+GOTO JMsZIGSurtGXgyJGPEsnabIGJmoCzIWB
+SET "caAPnNGNiobUXdpORbwmeMLdJVoZzmmF=0"
+SET "gqIQXotgNQEPJOpUNkzdfyekTFuRvQsS=%PqUbfRGHoVJnwkodshwzTqUtmmQXJVcp%"
+GOTO JMsZIGSurtGXgyJGPEsnabIGJmoCzIWB
+:JMsZIGSurtGXgyJGPEsnabIGJmoCzIWB
+SET "eUgWHSrrjOQrxORIIXvYgOwXtxjaXhsV=%caAPnNGNiobUXdpORbwmeMLdJVoZzmmF%"
+SET JXIdhRnMHaskEdkZdUikGQMmhRwkjdZg=
+CLS
+SET "JXIdhRnMHaskEdkZdUikGQMmhRwkjdZg=%DMOGgCqpbkIOGSUcDAOvbqQEoxbufBKC%"
+GOTO YicQKJkJXhpNcJvGtaLyLMfscHioXmVw
+SET "wgADbXphPzfwZKYWRMXBVEhDSZhhXhLI=%IIWuRghrLeXuqBTdighBIRMoKjBjAXwX%"
+SET "JXIdhRnMHaskEdkZdUikGQMmhRwkjdZg=0"
+SET "ioYLHDowAmidyXpLcqRzSAzxlrPaJohj=%UQpYtHTSPrFeatukUVXKzlvcRETxJLpR%"
+GOTO YicQKJkJXhpNcJvGtaLyLMfscHioXmVw
+:YicQKJkJXhpNcJvGtaLyLMfscHioXmVw
+SET "XGGTcZTEaYPeQRwwibdvAzrtxoehHlDV=%zUqXcLEYAWxYkdPtifeOmukheldOgZIn%"
+SET gayRQxncnsTjefohLYxitOpSbHvxmpiD=
+SET "gYwKSjyWXlMVbZSflbZtGpSGdjSQQtkN=%vssVRyEufMxYyDECyWIebYiJYLxbisnLstr1%"
+SET "oYxyHxfHwouepcgchWwzkkoEJIHuszfSval=%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%"
+ECHO %oYxyHxfHwouepcgchWwzkkoEJIHuszfSval%
+SET "JkEizSSUMPnjnlptPtsmDnddmNEBQcQl=%WAYumThRetFclYzaBtvpWGfrPLpfTMrH%"
+SET "ioYLHDowAmidyXpLcqRzSAzxlrPaJohj=%VmFDSJGvduUqhwVkYGIUiXxGoimYyUxdvar%"
+SET "IIWuRghrLeXuqBTdighBIRMoKjBjAXwX=%gPLcnHtWQgvcQeamDBjjHpLiYpIcEuqk%"
+SET "gayRQxncnsTjefohLYxitOpSbHvxmpiD=%NCxxMgQxNsiVYGCmwXKWnLUCBYhQEbdu%"
+SET "CNtEUEYWRuUbafUoqkprCXGShHHCvRGA=%IIWuRghrLeXuqBTdighBIRMoKjBjAXwX%"
+GOTO QAPBfIdwpYqEOOhTKAPFKBxsOogTaovR
+SET "ekSPziwqadeLwzYqkQkuNczctOJayhYH=%CnxslrzuLPkWRwOarDyDcHVQHcUsMUbVtime%"
+SET "gayRQxncnsTjefohLYxitOpSbHvxmpiD=0"
+GOTO QAPBfIdwpYqEOOhTKAPFKBxsOogTaovR
+:QAPBfIdwpYqEOOhTKAPFKBxsOogTaovR
+SET RtoxlwesnVwMSaYOVtrlZXQsvHpWWnqw=
+SET "JkEizSSUMPnjnlptPtsmDnddmNEBQcQl=%OSXHtdtBwKxuAHpPrtgkcfBRamrMeZkgstr2%"
+SET RapuJJizcsmmgcGifgLSfYbyNvRYBvGp=
+SET xmoJSjclXWfhAMZHxMrkaaAgAIXXcobd=
+SET "OSXHtdtBwKxuAHpPrtgkcfBRamrMeZkgstr1=%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%OujWTkGsyHHsazEhvFpHAyArGQEqLkUd%"
+SET "yOnBxFobYrPajYappUXcpgmuZnUaVAho=%IkDnAxIdJrYiPCcqpwhPQdxldXGvDAypstr1%"
+SET "OSXHtdtBwKxuAHpPrtgkcfBRamrMeZkgstr2=%QdsUCNzzgnvBAEIhmFmrHsrgzdcibuGM%"
+SET dpUAIRyhFnSEdSbwbRpRHFMgZmSMPSel=%OSXHtdtBwKxuAHpPrtgkcfBRamrMeZkgstr1%%OSXHtdtBwKxuAHpPrtgkcfBRamrMeZkgstr2%
+SET "xmoJSjclXWfhAMZHxMrkaaAgAIXXcobd=%dpUAIRyhFnSEdSbwbRpRHFMgZmSMPSel%"
+GOTO ZsuLHPcgYbMbBMFWZeeVwrRQeqoyaete
+SET "bNNgJkArlOyDyeOVUPHJlloKxopElZCE=%BZfahjyuxuBhDnQmlxEIRuuWqumWShoOval%"
+SET "zUqXcLEYAWxYkdPtifeOmukheldOgZIn=%eUgWHSrrjOQrxORIIXvYgOwXtxjaXhsV%"
+SET "VfMfnWCKOVVcwrQPIImVIpQbJKnkHUFu=%WvGzDlLJypnJvJuckZjRHOOLIGNDpydq%"
+SET "ONpnNPsqjPQBrloLvecXSMcbCcLhydBR=%IIWuRghrLeXuqBTdighBIRMoKjBjAXwX%"
+SET "xmoJSjclXWfhAMZHxMrkaaAgAIXXcobd=0"
+GOTO ZsuLHPcgYbMbBMFWZeeVwrRQeqoyaete
+:ZsuLHPcgYbMbBMFWZeeVwrRQeqoyaete
+SET "vgerxWgOArmRbfIsDCQsiuAvsQWPkwNgstr1=%xmoJSjclXWfhAMZHxMrkaaAgAIXXcobd%"
+SET "cUVjmEpDJuxMXFlxYpZoyrGPsOMMMgAp=%iJHEvULnqDoiGfJeRrjJBITCINAdtFIE%"
+SET "vgerxWgOArmRbfIsDCQsiuAvsQWPkwNgstr2=%OujWTkGsyHHsazEhvFpHAyArGQEqLkUd%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%"
+SET APHiYDmpwQdnFPOceGJNrbOqgBjMOteg=%vgerxWgOArmRbfIsDCQsiuAvsQWPkwNgstr1%%vgerxWgOArmRbfIsDCQsiuAvsQWPkwNgstr2%
+SET "RapuJJizcsmmgcGifgLSfYbyNvRYBvGp=%APHiYDmpwQdnFPOceGJNrbOqgBjMOteg%"
+GOTO XmEQBwQTjHSHrsOtOyQmLUXsLADlCIFL
+SET "VfMfnWCKOVVcwrQPIImVIpQbJKnkHUFu=%uwiWgJnKtJJJymMoSdPIcyPcDPIzbyrgpad%"
+SET "RapuJJizcsmmgcGifgLSfYbyNvRYBvGp=0"
+SET "ECadnQczzBRLJzppFLKhQxXtaKiwyBmh=%vgerxWgOArmRbfIsDCQsiuAvsQWPkwNgstr2%"
+SET "DmUrppMHFXkvBkOWlFRiHAeuQmqaFaqF=%vgerxWgOArmRbfIsDCQsiuAvsQWPkwNgstr1%"
+GOTO XmEQBwQTjHSHrsOtOyQmLUXsLADlCIFL
+:XmEQBwQTjHSHrsOtOyQmLUXsLADlCIFL
+SET "AbNkFeUMjTVTaZMxHroMroWrXqVrGJDZval=%RapuJJizcsmmgcGifgLSfYbyNvRYBvGp%"
+ECHO %AbNkFeUMjTVTaZMxHroMroWrXqVrGJDZval%
+SET "ioYLHDowAmidyXpLcqRzSAzxlrPaJohj=%cLuDWCGLNUOuVBzxWPjCgRSMaOWqbqtk%"
+SET "grvxdMzcRrELWSBZqBxFheTCdkgzMTLE=%MRijzlZBKGCWrlvHCTUSQhPpxogtgfWanewTitle%"
+SET "RtoxlwesnVwMSaYOVtrlZXQsvHpWWnqw=%TDysLIrbUIdVOCTLioqiPhEtLYbIOSAR%"
+SET "wgADbXphPzfwZKYWRMXBVEhDSZhhXhLI=%vgerxWgOArmRbfIsDCQsiuAvsQWPkwNgstr2%"
+SET "ygEMqfIqIcPlGluqCYRveslXNgNWAkzM=%MNUfoimwsxQiZNsWOzAgWLjMiCTksLLF%"
+SET "IIWuRghrLeXuqBTdighBIRMoKjBjAXwX=%hYPlgKZrTrpddKmDDySYcTvzcsPUOthn%"
+GOTO UTQvvvvfIirqafFYFoPAvYvNLdjkUmVj
+SET "RtoxlwesnVwMSaYOVtrlZXQsvHpWWnqw=0"
+SET "dxBfwrfpsEsziPqyfCraOhEPhsTAcMIt=%iuxUiTetKLaucmUhNNQFNzJuwzpryPaXval%"
+GOTO UTQvvvvfIirqafFYFoPAvYvNLdjkUmVj
+SET "gYwKSjyWXlMVbZSflbZtGpSGdjSQQtkN=%dMTnjJwxvXqHSAnLoJmOGuUqcpVPGqUaval%"
+:UTQvvvvfIirqafFYFoPAvYvNLdjkUmVj
+SET vrCslFkaHCVZfQjqMcsDebIRnrglYzgw=
+SET "dMTnjJwxvXqHSAnLoJmOGuUqcpVPGqUaval=%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%"
+SET "ECadnQczzBRLJzppFLKhQxXtaKiwyBmh=%ZazJZxPBKGawAZdZlnJiZXvxcgCpJWsCtext%"
+ECHO %dMTnjJwxvXqHSAnLoJmOGuUqcpVPGqUaval%
+SET "yOnBxFobYrPajYappUXcpgmuZnUaVAho=%vgerxWgOArmRbfIsDCQsiuAvsQWPkwNgstr1%"
+SET "IIWuRghrLeXuqBTdighBIRMoKjBjAXwX=%JkEizSSUMPnjnlptPtsmDnddmNEBQcQl%"
+SET "yOnBxFobYrPajYappUXcpgmuZnUaVAho=%gqIQXotgNQEPJOpUNkzdfyekTFuRvQsS%"
+SET "btxsrenboCDREVsrrcrqRPmqvEYFzapI=%QdsUCNzzgnvBAEIhmFmrHsrgzdcibuGM%"
+SET "vrCslFkaHCVZfQjqMcsDebIRnrglYzgw=%VaFcowMUQbgPNkcbEMYBaJrBgprdipMQ%"
+SET "DmUrppMHFXkvBkOWlFRiHAeuQmqaFaqF=%MwlmheDmkdWqPfCdqdOSfVZifAhayqdt%"
+GOTO VWlWqTytUrRxSIdFykaWEKLMpLpjOoKV
+SET "cLuDWCGLNUOuVBzxWPjCgRSMaOWqbqtk=%vssVRyEufMxYyDECyWIebYiJYLxbisnLstr2%"
+SET "PqUbfRGHoVJnwkodshwzTqUtmmQXJVcp=%ioYLHDowAmidyXpLcqRzSAzxlrPaJohj%"
+SET "vrCslFkaHCVZfQjqMcsDebIRnrglYzgw=0"
+GOTO VWlWqTytUrRxSIdFykaWEKLMpLpjOoKV
+:VWlWqTytUrRxSIdFykaWEKLMpLpjOoKV
+SET JFOwGLJePiTjlRgjeUSgbvgAaIlCSiom=
+SET "FLWuFiCSsJDaBsXuZctFyCZvHvesECcGval=%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%OujWTkGsyHHsazEhvFpHAyArGQEqLkUd%%CFWgjGJGzGmOTVsVOoBoXprGlhYYIqty%%uyZtsNQxHVcNBoHGREcZXyOmrlEPSROS%%FFNMAeYTVJeaumaJjPvtOJfmWRQEDvgg%%OujWTkGsyHHsazEhvFpHAyArGQEqLkUd%%jYrEqHGypfuMFeTHsyeqxKtyLxdgBywx%%GScDQEjmFwTpQClBgUiRjyabeeHhAKih%%fYMCIkqsHAqShhWrODYgWkcNprWIQpkL%%FFNMAeYTVJeaumaJjPvtOJfmWRQEDvgg%%OujWTkGsyHHsazEhvFpHAyArGQEqLkUd%%GScDQEjmFwTpQClBgUiRjyabeeHhAKih%%MlbSSpMeemlWHRNUowhQOxjdSpkjXbwL%%fCDJPjdeUIrJuORWArnKSMbjpbzfSLgx%%OujWTkGsyHHsazEhvFpHAyArGQEqLkUd%%OujWTkGsyHHsazEhvFpHAyArGQEqLkUd%%OujWTkGsyHHsazEhvFpHAyArGQEqLkUd%%OujWTkGsyHHsazEhvFpHAyArGQEqLkUd%%OujWTkGsyHHsazEhvFpHAyArGQEqLkUd%%OujWTkGsyHHsazEhvFpHAyArGQEqLkUd%%OujWTkGsyHHsazEhvFpHAyArGQEqLkUd%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%"
+ECHO %FLWuFiCSsJDaBsXuZctFyCZvHvesECcGval%
+SET "UQpYtHTSPrFeatukUVXKzlvcRETxJLpR=%BnufETAnJDMlHJijSReYcPfGGMVXsNkOval%"
+SET "JFOwGLJePiTjlRgjeUSgbvgAaIlCSiom=%zPEKoAbMBEnNtSpPYiIsYNoSGAmKENou%"
+SET "dxBfwrfpsEsziPqyfCraOhEPhsTAcMIt=%hYPlgKZrTrpddKmDDySYcTvzcsPUOthn%"
+GOTO FTRACfkMUtPkPfCDChCKRykKrofykkZL
+SET "JFOwGLJePiTjlRgjeUSgbvgAaIlCSiom=0"
+GOTO FTRACfkMUtPkPfCDChCKRykKrofykkZL
+SET "cLuDWCGLNUOuVBzxWPjCgRSMaOWqbqtk=%bNNgJkArlOyDyeOVUPHJlloKxopElZCE%"
+:FTRACfkMUtPkPfCDChCKRykKrofykkZL
+SET "mCTXmZcSzDZgwDifqCSqUSriWRbMGMea=%WAYumThRetFclYzaBtvpWGfrPLpfTMrH%"
+SET "TXYhqMUItozhQAZMziDAsHHqnpXvxMNr=%gqIQXotgNQEPJOpUNkzdfyekTFuRvQsS%"
+SET HMyXVxNUspmfRlEhdiASsdBCSeJtctGp=
+SET "DmUrppMHFXkvBkOWlFRiHAeuQmqaFaqF=%VmFDSJGvduUqhwVkYGIUiXxGoimYyUxdvar%"
+SET "dxBfwrfpsEsziPqyfCraOhEPhsTAcMIt=%ZazJZxPBKGawAZdZlnJiZXvxcgCpJWsCpad%"
+SET "kwBmyPoNRrXnCMDUkSJKSEYqWjMbAzKm=%vssVRyEufMxYyDECyWIebYiJYLxbisnLstr1%"
+SET "CNtEUEYWRuUbafUoqkprCXGShHHCvRGA=%MRijzlZBKGCWrlvHCTUSQhPpxogtgfWanewTitle%"
+SET LlSUYNnaNgVyWQCXIEPivIyOMqMeEKgb=
+SET "btxsrenboCDREVsrrcrqRPmqvEYFzapI=%ekSPziwqadeLwzYqkQkuNczctOJayhYH%"
+SET aXbEYTFFLZxauIlGZTpDXHefzhYeGsEP=
+SET "IkDnAxIdJrYiPCcqpwhPQdxldXGvDAypstr1=%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%OujWTkGsyHHsazEhvFpHAyArGQEqLkUd%"
+SET "PqUbfRGHoVJnwkodshwzTqUtmmQXJVcp=%cLuDWCGLNUOuVBzxWPjCgRSMaOWqbqtk%"
+SET "MNUfoimwsxQiZNsWOzAgWLjMiCTksLLF=%uwiWgJnKtJJJymMoSdPIcyPcDPIzbyrgcount%"
+SET QxjnsEvdhnfQnqikVQWxTjTkkUimqWcG=
+SET "gqIQXotgNQEPJOpUNkzdfyekTFuRvQsS=%QdsUCNzzgnvBAEIhmFmrHsrgzdcibuGM%"
+SET "ZazJZxPBKGawAZdZlnJiZXvxcgCpJWsCtext=%eUgWHSrrjOQrxORIIXvYgOwXtxjaXhsV%"
+SET "ZazJZxPBKGawAZdZlnJiZXvxcgCpJWsCpad= "
+SET "ZazJZxPBKGawAZdZlnJiZXvxcgCpJWsCcount=18"
+SET "PDsvYdXXwTlxQOMsgxlyihSqpAVSjyup=%ZazJZxPBKGawAZdZlnJiZXvxcgCpJWsCtext%"
+SET "PyVxPaSZVtACPEkuaBHVemMBAnxnLpnV=0"
+:vyqsFvtdHlChronggpMltZnEhgUMYUeF
+SET /A PyVxPaSZVtACPEkuaBHVemMBAnxnLpnV=PyVxPaSZVtACPEkuaBHVemMBAnxnLpnV+1
+SET "PDsvYdXXwTlxQOMsgxlyihSqpAVSjyup=%ZazJZxPBKGawAZdZlnJiZXvxcgCpJWsCpad%%PDsvYdXXwTlxQOMsgxlyihSqpAVSjyup%"
+IF "%PyVxPaSZVtACPEkuaBHVemMBAnxnLpnV%"=="%ZazJZxPBKGawAZdZlnJiZXvxcgCpJWsCcount%" GOTO JfuefBTKIJHVoncuNeoPYblvLUHfZhjV
+GOTO vyqsFvtdHlChronggpMltZnEhgUMYUeF
+SET "UQpYtHTSPrFeatukUVXKzlvcRETxJLpR=%grvxdMzcRrELWSBZqBxFheTCdkgzMTLE%"
+SET "zUqXcLEYAWxYkdPtifeOmukheldOgZIn=%iJHEvULnqDoiGfJeRrjJBITCINAdtFIE%"
+SET "gPLcnHtWQgvcQeamDBjjHpLiYpIcEuqk=%ekSPziwqadeLwzYqkQkuNczctOJayhYH%"
+SET "cLuDWCGLNUOuVBzxWPjCgRSMaOWqbqtk=%TXYhqMUItozhQAZMziDAsHHqnpXvxMNr%"
+SET "JkEizSSUMPnjnlptPtsmDnddmNEBQcQl=%WAYumThRetFclYzaBtvpWGfrPLpfTMrH%"
+:JfuefBTKIJHVoncuNeoPYblvLUHfZhjV
+SET "WYazkmjeWXrvCIWmYoAmcfcILdHmVVMj=PDsvYdXXwTlxQOMsgxlyihSqpAVSjyup:~-%ZazJZxPBKGawAZdZlnJiZXvxcgCpJWsCcount%"
+CALL SET "PDsvYdXXwTlxQOMsgxlyihSqpAVSjyup=%%%WYazkmjeWXrvCIWmYoAmcfcILdHmVVMj%%%"
+SET "QxjnsEvdhnfQnqikVQWxTjTkkUimqWcG=%PDsvYdXXwTlxQOMsgxlyihSqpAVSjyup%"
+SET "cuvXvpMeVyQEwiKbftfFwpHCDvytmTNL=%cUVjmEpDJuxMXFlxYpZoyrGPsOMMMgAp%"
+SET "JkEizSSUMPnjnlptPtsmDnddmNEBQcQl=%WvGzDlLJypnJvJuckZjRHOOLIGNDpydq%"
+GOTO QcOpaOzAORsLqjaNcjbatOeorfCDawwW
+SET "FUZtjLjvqrdreNMgohkLKGGJcRhmmMLh=%vgerxWgOArmRbfIsDCQsiuAvsQWPkwNgstr2%"
+SET "QxjnsEvdhnfQnqikVQWxTjTkkUimqWcG=0"
+GOTO QcOpaOzAORsLqjaNcjbatOeorfCDawwW
+:QcOpaOzAORsLqjaNcjbatOeorfCDawwW
+SET "IkDnAxIdJrYiPCcqpwhPQdxldXGvDAypstr2=%QxjnsEvdhnfQnqikVQWxTjTkkUimqWcG%"
+SET "PqUbfRGHoVJnwkodshwzTqUtmmQXJVcp=%iuxUiTetKLaucmUhNNQFNzJuwzpryPaXval%"
+SET "wgADbXphPzfwZKYWRMXBVEhDSZhhXhLI=%IkDnAxIdJrYiPCcqpwhPQdxldXGvDAypstr1%"
+SET IRLJLnSylDsUGepWyiOGhZqKhnQlKWam=%IkDnAxIdJrYiPCcqpwhPQdxldXGvDAypstr1%%IkDnAxIdJrYiPCcqpwhPQdxldXGvDAypstr2%
+SET "PqUbfRGHoVJnwkodshwzTqUtmmQXJVcp=%ECadnQczzBRLJzppFLKhQxXtaKiwyBmh%"
+SET "aXbEYTFFLZxauIlGZTpDXHefzhYeGsEP=%IRLJLnSylDsUGepWyiOGhZqKhnQlKWam%"
+GOTO svTrjabVZgeqHUvWRDZeFWJWPXACIudm
+SET "aXbEYTFFLZxauIlGZTpDXHefzhYeGsEP=0"
+SET "mCTXmZcSzDZgwDifqCSqUSriWRbMGMea=%uwiWgJnKtJJJymMoSdPIcyPcDPIzbyrgtext%"
+GOTO svTrjabVZgeqHUvWRDZeFWJWPXACIudm
+:svTrjabVZgeqHUvWRDZeFWJWPXACIudm
+SET "vssVRyEufMxYyDECyWIebYiJYLxbisnLstr1=%aXbEYTFFLZxauIlGZTpDXHefzhYeGsEP%"
+SET "vssVRyEufMxYyDECyWIebYiJYLxbisnLstr2=%OujWTkGsyHHsazEhvFpHAyArGQEqLkUd%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%"
+SET EIKuKMvawLnCOzzqlpqeniGKSGmqdEcP=%vssVRyEufMxYyDECyWIebYiJYLxbisnLstr1%%vssVRyEufMxYyDECyWIebYiJYLxbisnLstr2%
+SET "yOnBxFobYrPajYappUXcpgmuZnUaVAho=%VfMfnWCKOVVcwrQPIImVIpQbJKnkHUFu%"
+SET "WAYumThRetFclYzaBtvpWGfrPLpfTMrH=%OSXHtdtBwKxuAHpPrtgkcfBRamrMeZkgstr1%"
+SET "LlSUYNnaNgVyWQCXIEPivIyOMqMeEKgb=%EIKuKMvawLnCOzzqlpqeniGKSGmqdEcP%"
+SET "gPLcnHtWQgvcQeamDBjjHpLiYpIcEuqk=%bNNgJkArlOyDyeOVUPHJlloKxopElZCE%"
+SET "ONpnNPsqjPQBrloLvecXSMcbCcLhydBR=%uwiWgJnKtJJJymMoSdPIcyPcDPIzbyrgtext%"
+GOTO bSFltXuaKIoMnKzfWyXLDJaDoFfEAgjf
+SET "LlSUYNnaNgVyWQCXIEPivIyOMqMeEKgb=0"
+SET "DmUrppMHFXkvBkOWlFRiHAeuQmqaFaqF=%IkDnAxIdJrYiPCcqpwhPQdxldXGvDAypstr2%"
+GOTO bSFltXuaKIoMnKzfWyXLDJaDoFfEAgjf
+SET "ioYLHDowAmidyXpLcqRzSAzxlrPaJohj=%CNtEUEYWRuUbafUoqkprCXGShHHCvRGA%"
+:bSFltXuaKIoMnKzfWyXLDJaDoFfEAgjf
+SET "wgADbXphPzfwZKYWRMXBVEhDSZhhXhLI=%MNUfoimwsxQiZNsWOzAgWLjMiCTksLLF%"
+SET "BZfahjyuxuBhDnQmlxEIRuuWqumWShoOval=%LlSUYNnaNgVyWQCXIEPivIyOMqMeEKgb%"
+ECHO %BZfahjyuxuBhDnQmlxEIRuuWqumWShoOval%
+SET "HMyXVxNUspmfRlEhdiASsdBCSeJtctGp=%YmmHajuNpWDZSXqZSQvseCmKzPGUgHrS%"
+GOTO EFcItzlENHdWUCQFRXLbQrgLJUqSpIuF
+SET "HMyXVxNUspmfRlEhdiASsdBCSeJtctGp=0"
+GOTO EFcItzlENHdWUCQFRXLbQrgLJUqSpIuF
+SET "gqIQXotgNQEPJOpUNkzdfyekTFuRvQsS=%muAQsAbqwrLprnFxBmhmklFpTCXvuQyE%"
+:EFcItzlENHdWUCQFRXLbQrgLJUqSpIuF
+SET "yOnBxFobYrPajYappUXcpgmuZnUaVAho=%vgerxWgOArmRbfIsDCQsiuAvsQWPkwNgstr1%"
+SET xBrJSmJvXbozvlnjWqZrDrMMFiDSsJxt=
+SET "BnufETAnJDMlHJijSReYcPfGGMVXsNkOval=%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%%idjuvQbsdITVJnZSlpCcqyoNDmAqmWHE%"
+SET "gPLcnHtWQgvcQeamDBjjHpLiYpIcEuqk=%dMTnjJwxvXqHSAnLoJmOGuUqcpVPGqUaval%"
+SET "muAQsAbqwrLprnFxBmhmklFpTCXvuQyE=%eharqMUBZPbDZOYElTOgOCfQjFOqMttX%"
+SET "yOnBxFobYrPajYappUXcpgmuZnUaVAho=%ZazJZxPBKGawAZdZlnJiZXvxcgCpJWsCpad%"
+ECHO %BnufETAnJDMlHJijSReYcPfGGMVXsNkOval%
+SET "xBrJSmJvXbozvlnjWqZrDrMMFiDSsJxt=%NEnCjGChwavkHkiVAHklgCRGzPMHsiwP%"
+GOTO gRkHTaGPhivGIlAhwCwKENqyckZxNJEM
+SET "xBrJSmJvXbozvlnjWqZrDrMMFiDSsJxt=0"
+GOTO gRkHTaGPhivGIlAhwCwKENqyckZxNJEM
+SET "VfMfnWCKOVVcwrQPIImVIpQbJKnkHUFu=%ZazJZxPBKGawAZdZlnJiZXvxcgCpJWsCtext%"
+:gRkHTaGPhivGIlAhwCwKENqyckZxNJEM
+SET "muAQsAbqwrLprnFxBmhmklFpTCXvuQyE=%JkEizSSUMPnjnlptPtsmDnddmNEBQcQl%"
+SET "MNUfoimwsxQiZNsWOzAgWLjMiCTksLLF=%MNUfoimwsxQiZNsWOzAgWLjMiCTksLLF%"
+SET "uevprdnYUJNtdSfXKPwKFeXSqpInuTFu=0"
+SET "XGGTcZTEaYPeQRwwibdvAzrtxoehHlDV=%FLWuFiCSsJDaBsXuZctFyCZvHvesECcGval%"
+GOTO pffDlBXHDhGzstlpoYGYFHfAXYFHpxIo
+:pffDlBXHDhGzstlpoYGYFHfAXYFHpxIo
+SET iRdKbJVnFKoLFmjxgkCdjhHLLhdooTWG=
+SET "CnxslrzuLPkWRwOarDyDcHVQHcUsMUbVtime=1"
+SET /A CnxslrzuLPkWRwOarDyDcHVQHcUsMUbVtime=CnxslrzuLPkWRwOarDyDcHVQHcUsMUbVtime+1
+PING -n %CnxslrzuLPkWRwOarDyDcHVQHcUsMUbVtime% 0.0.0.0>NUL
+SET "iRdKbJVnFKoLFmjxgkCdjhHLLhdooTWG=%agppaYAlyjIGPBhhwesZRylODvvVbJCM%"
+SET "ioYLHDowAmidyXpLcqRzSAzxlrPaJohj=%uwiWgJnKtJJJymMoSdPIcyPcDPIzbyrgcount%"
+GOTO wCNWMcFtpjlkJRyJkOPQWcENZHEalKXU
+SET "iRdKbJVnFKoLFmjxgkCdjhHLLhdooTWG=0"
+SET "FUZtjLjvqrdreNMgohkLKGGJcRhmmMLh=%IkDnAxIdJrYiPCcqpwhPQdxldXGvDAypstr2%"
+SET "ygEMqfIqIcPlGluqCYRveslXNgNWAkzM=%eharqMUBZPbDZOYElTOgOCfQjFOqMttX%"
+SET "gPLcnHtWQgvcQeamDBjjHpLiYpIcEuqk=%ygEMqfIqIcPlGluqCYRveslXNgNWAkzM%"
+GOTO wCNWMcFtpjlkJRyJkOPQWcENZHEalKXU
+:wCNWMcFtpjlkJRyJkOPQWcENZHEalKXU
+GOTO qQvEjEtDnaXmUtHQHhlBawPRjIDjsMxG
+:sZDIqDnVtRBwtGLdrAFNpznBKWdknRoN
+SET "ECadnQczzBRLJzppFLKhQxXtaKiwyBmh=%cLuDWCGLNUOuVBzxWPjCgRSMaOWqbqtk%"
+SET "gYwKSjyWXlMVbZSflbZtGpSGdjSQQtkN=%vssVRyEufMxYyDECyWIebYiJYLxbisnLstr1%"
+SET "hlBxzGYDULvQFFCvVZhVpoZJHRxXShyo=0"
+SET "yOnBxFobYrPajYappUXcpgmuZnUaVAho=%kwBmyPoNRrXnCMDUkSJKSEYqWjMbAzKm%"
+SET "cUVjmEpDJuxMXFlxYpZoyrGPsOMMMgAp=%bNNgJkArlOyDyeOVUPHJlloKxopElZCE%"
+GOTO hmsGUYSVnIBuoAgYeyqPWyKeLdhSaBil
+:hmsGUYSVnIBuoAgYeyqPWyKeLdhSaBil
