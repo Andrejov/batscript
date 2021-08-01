@@ -1,1 +1,0 @@
-require('./Decomposer.test.js')

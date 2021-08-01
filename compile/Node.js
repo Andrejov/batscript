@@ -1,5 +1,3 @@
-const Symbol = require("./Symbol")
-
 class Node
 {
     /** @type{NodeType} */

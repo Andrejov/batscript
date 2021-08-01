@@ -1,9 +1,7 @@
 const ComposingScope = require("./ComposingScope");
 const Node = require("./Node");
 const v8 = require('v8');
-const Recomposer = require("./Recomposer");
 const Decomposer = require("./Decomposer");
-const { niceNodes } = require("./Decomposer");
 const Natives = require("./Natives");
 const Util = require("./Util");
 
@@ -57,12 +55,12 @@ class Composer
 
         let tree = this.assign(startpoint, scope, null);
 
-        Natives.applyNatives(tree);
-
         let found = true;
         let callStack = 0;
         while(found)
         {
+            Natives.applyNatives(tree);
+
             found = false;
             callStack += 1;
             

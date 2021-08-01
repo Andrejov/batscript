@@ -1,7 +1,5 @@
 const Composer = require('./Composer');
 const Decomposer = require('./Decomposer');
-const Environment = require('./Environment');
-const Node = require('./Node');
 const fs = require('fs');
 
 exports.compile = function(sourceCode)
