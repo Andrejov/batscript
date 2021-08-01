@@ -7,11 +7,32 @@ const Util = require("./Util");
 
 class Composer
 {
+    static debug = false;
+    static obfuscate = true;
+
     static randomInc = -1;
     static random()
     {
-        this.randomInc ++;
-        return `_${this.randomInc.toString().padStart(4, '0')}_`;
+        if(this.debug)
+        {
+            this.randomInc ++;
+            return `_${this.randomInc.toString().padStart(4, '0')}_`;
+        }else{
+            const charset = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+            return " ".repeat(32).split('')
+                .map(c => charset[Math.floor(Math.random() * charset.length)])
+                .join('');
+        }
+    }
+
+    static generateLabel(string)
+    {
+        if(this.debug)
+        {
+            return `${string}${this.random()}`
+        }else{
+            return this.random()
+        }
     }
 
     /**
@@ -90,6 +111,41 @@ class Composer
             }
         }
 
+        if(this.obfuscate)
+        {
+            const dict = {};
+
+            const subval = (value) => {
+                return value.split('').map(ch => {
+                    if(!dict[ch])
+                    {
+                        dict[ch] = this.random();
+                    }
+                    return `%${dict[ch]}%`;
+                }).join('')
+            }
+
+            Util.forNode(tree, n => {
+                if(n.type == 'raw')
+                {
+                    const nan = +n.value;
+                    if(Number.isNaN(nan))
+                    {
+                        //string
+                        n.value = subval(n.value)
+                    }
+                }
+            })
+
+            subval(this.random());
+
+            Object.keys(dict).sort(() => Math.random() - 0.5).forEach(char => {
+                var key = dict[char];
+                scope.pushLine(`SET "${key}=${char}"`);
+            })
+        }
+        const obfEnd = scope.output.length;
+
         console.log(JSON.stringify(Decomposer.niceNodes(tree), null, 4));
 
         // console.log(Recomposer.build(tree));
@@ -122,6 +178,40 @@ class Composer
 
         this.build(tree, scope);
 
+        if(this.obfuscate)
+        {
+            const obfRuns = Math.round(scope.output.length / 2);
+            const symRuns = Math.round(obfRuns/ 3);
+
+            let obfSymbols = [];
+            for(let run = 0; run < symRuns; run++)
+            {
+                obfSymbols.push(this.random());
+            }
+
+            let obfSource = [
+                ...obfSymbols, 
+                ...scope.symbols.filter(s => s.node.type == 'var').map(s => s.node.batch)
+            ];
+
+            for(let run = 0; run < obfRuns; run++)
+            {
+                const s1 = obfSymbols[Math.floor(Math.random() * obfSymbols.length)];
+                const s2 = obfSource[Math.floor(Math.random() * obfSource.length)];
+                
+                const loc = Math.floor(Math.random() * (scope.output.length - obfEnd)) + obfEnd;
+
+                let line = "";
+                if(Math.random() > 0.2)
+                {
+                    line = `SET "${s1}=%${s2}%"`
+                }else{
+                    line = `:${s1}`
+                }
+
+                scope.output.splice(loc, 0, line);
+            }
+        }
 
 
         // Util.forNode(main, n => {
@@ -193,7 +283,7 @@ class Composer
             const node = new Node('assign');
             const func = this.cloneNode(symbol.node);
 
-            const fmod = `__${func.func}_${this.random()}__`;
+            const fmod = this.generateLabel(`__${func.func}_`);
 
             node.assignSrc = evl.params.map(p => {
                 // if(p.type == 'eval')
@@ -300,7 +390,7 @@ class Composer
     static buildnative(node, scope)
     {
         //this.native("add", "SET /A ${r}=${a}+${b}", ["a", "b"])
-        const retvar = `__ret_ntv_${this.random()}`;
+        const retvar = this.generateLabel(`__ret_ntv_`);
 
         node.nativeString.forEach(line => {
             const rpbox = '___$$^_/'
@@ -354,10 +444,13 @@ class Composer
      */
     static buildassign(node, scope)
     {
-        scope.pushLine(`REM Assign begin ${node.batch}`)
+        if(this.debug)
+        {
+            scope.pushLine(`REM Assign begin ${node.batch}`)
+        }
 
-        const retstr = `__ret_${this.random()}`;
-        const gotostr = `__gret_${this.random()}`;
+        const retstr = this.generateLabel(`__ret_`);
+        const gotostr = this.generateLabel(`__gret_`);
 
         scope.pushLine(`SET ${retstr}=`);
         
@@ -380,7 +473,10 @@ class Composer
 
         scope.pushLine(`:${gotostr}`)
 
-        scope.pushLine(`REM Assign end`)
+        if(this.debug)
+        {
+            scope.pushLine(`REM Assign end`)
+        }
 
         return `%${retstr}%`;
     }
@@ -394,13 +490,13 @@ class Composer
     {
         if(node.sub == "if")
         {
-            const exprstr = `__expr_${this.random()}`;
-            const endstr = `__ifend_${this.random()}`;
+            const exprstr = this.generateLabel(`__expr_`);
+            const endstr = this.generateLabel(`__ifend_`);
 
             scope.pushLine(`SET "${exprstr}=${this.build(node.expression, scope)}"`);
 
             scope.pushLine(`IF \"%${exprstr}%\"==\"1\" (`)
-            scope.pushLine(`REM IF_FILLER_STATEMENT`)
+            scope.pushLine(`REM ${this.debug ? 'IF_FILLER_STATEMENT' : this.random()}`)
             scope.pushLine(`) ELSE (`);
             scope.pushLine(`GOTO ${endstr}`);
             scope.pushLine(`)`);
@@ -409,16 +505,16 @@ class Composer
 
             scope.pushLine(`:${endstr}`);
         }else if(node.sub == "while"){
-            const exprstr = `__expr_${this.random()}`;
-            const startstr = `__whilestart_${this.random()}`;
-            const endstr = `__whileend_${this.random()}`;
+            const exprstr = this.generateLabel(`__expr_`);
+            const startstr = this.generateLabel(`__whilestart_`);
+            const endstr = this.generateLabel(`__whileend_`);
 
             scope.pushLine(`:${startstr}`);
 
             scope.pushLine(`SET "${exprstr}=${this.build(node.expression, scope)}"`);
 
             scope.pushLine(`IF \"%${exprstr}%\"==\"1\" (`)
-            scope.pushLine(`REM WHILE_FILLER_STATEMENT`)
+            scope.pushLine(`REM ${this.debug ? 'WHILE_FILLER_STATEMENT' : this.random()}`)
             scope.pushLine(`) ELSE (`);
             scope.pushLine(`GOTO ${endstr}`);
             scope.pushLine(`)`);
